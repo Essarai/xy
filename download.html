@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>下载简历</title>
+</head>
+<body>
+<script>
+  // 创建一个隐藏的 a 标签，并触发下载
+  const link = document.createElement('a');
+  link.href = 'resume.pdf'; // PDF 文件路径
+  link.download = '徐逸_Ai产品经理_西北工业大学_硕士.pdf'; // 下载时显示的文件名
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+</script>
+</body>
+</html>
